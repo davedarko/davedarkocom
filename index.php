@@ -121,6 +121,8 @@ function show_selected_page($dir, $page)
 				isset($page) &&
 				$file_name == $page
 			) {
+				echo '<br>';
+				echo 'you should definitely see the content';
 				if (substr($file_name, -3) == '.md')
 				{
 					$file_content = file_get_contents($file_path);
