@@ -36,8 +36,15 @@ echo '<body>';
 
 echo '<div class="container">';
 echo '<h1>davedarko</h1>';
+echo '<div class="row">';
+echo '<div class="five column">';
 scan_and_list_folder($dir);
+echo '</div>';
+echo '<div class="seven columns">';
 show_selected_page($dir, $page);
+echo '</div>';
+echo '</div>';
+
 echo '</div>';
 echo '</body>';
 echo '</html>';
