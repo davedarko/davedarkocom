@@ -65,6 +65,9 @@ function scan_and_list_folder($dir)
 	$content_folder = scandir($dir);
 	if (is_array($content_folder))
 	{
+		echo '<h2>';
+		echo make_that_filename_pretty($dir);
+		echo '</h2>';
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
