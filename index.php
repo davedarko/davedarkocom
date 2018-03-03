@@ -2,6 +2,16 @@
 echo '<!DOCTYPE html>';
 echo '<html>';
 echo '<head>';
+echo '<meta charset="utf-8">';
+echo '<meta name="description" content="">';
+echo '<meta name="author" content="">';
+
+echo '<!-- Mobile Specific Metas -->';
+echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
+
+echo '<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">';
+
+echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
