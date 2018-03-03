@@ -1,4 +1,15 @@
 <?php
+include('../parsedown/Parsedown.php');
+$Parsedown = new Parsedown();
+
+$page = null;
+if (isset($_GET['page']))
+{
+	$page = $_GET['page'];
+}
+
+$dir = 'content';
+
 echo '<!DOCTYPE html>';
 echo '<html>';
 echo '<head>';
@@ -22,63 +33,12 @@ echo '</title>';
 echo '</head>';
 
 echo '<body>';
-include('../parsedown/Parsedown.php');
-$Parsedown = new Parsedown();
-
 
 echo '<div class="container">';
 echo '<h1>davedarko</h1>';
-
-$page = null;
-if (isset($_GET['page']))
-{
-	$page = $_GET['page'];
-}
-
-$dir = 'content';
 scan_and_list_folder($dir);
 show_selected_page($dir, $page);
-
-function show_selected_page($dir, $page)
-{
-	$content_folder = scandir($dir);
-	if (is_array($content_folder))
-	{
-		foreach ($content_folder as $file_name)
-		{
-			if (
-				is_dir($file_name) &&
-				$file_name != '.' &&
-				$file_name != '..'
-			) {
-				show_selected_page($file_name, $page);
-			}
-
-			if (
-				isset($page) &&
-				$file_name == $page
-			) {
-				if (substr($file_name, -3) == '.md')
-				{
-					$file_content = file_get_contents('content/'.$file_name);
-					echo $Parsedown->text($file_content);	
-				}
-				
-				if (
-					substr($file_name, -4) == '.php' ||
-					substr($file_name, -5) == '.html'
-				) {
-					include('content/'.$file_name);
-				}
-			}
-		}
-	}
-}
-
-
-
 echo '</div>';
-
 echo '</body>';
 echo '</html>';
 
@@ -108,6 +68,8 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
+			print_r($file_name);
+			
 			if (
 				is_dir($file_name) &&
 				$file_name != '.' &&
@@ -131,6 +93,43 @@ function scan_and_list_folder($dir)
 			}
 		}
 		echo '</ul>';
+	}
+}
+
+function show_selected_page($dir, $page)
+{
+	$content_folder = scandir($dir);
+	if (is_array($content_folder))
+	{
+		foreach ($content_folder as $file_name)
+		{
+			print_r($file_name);
+			if (
+				is_dir($file_name) &&
+				$file_name != '.' &&
+				$file_name != '..'
+			) {
+				show_selected_page($file_name, $page);
+			}
+
+			if (
+				isset($page) &&
+				$file_name == $page
+			) {
+				if (substr($file_name, -3) == '.md')
+				{
+					$file_content = file_get_contents('content/'.$file_name);
+					echo $Parsedown->text($file_content);	
+				}
+				
+				if (
+					substr($file_name, -4) == '.php' ||
+					substr($file_name, -5) == '.html'
+				) {
+					include('content/'.$file_name);
+				}
+			}
+		}
 	}
 }
 ?>
