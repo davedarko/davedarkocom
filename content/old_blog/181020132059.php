@@ -6,7 +6,7 @@ Einfach ein gutes Gef&uuml;hl, beim l&ouml;ten den Iron Man Soundtrack laufen zu
 <br />
 <h2>1. Der SD Karten Adapter</h2>
 Die Zeichnung der Schaltung auf elm-chan.org bezieht sich auf die Anschl&uuml;sse eines MicroSD Adapters. Auf <a href="http://elasticsheep.com/2010/01/reading-an-sd-card-with-an-atmega168/">http://elasticsheep.com/</a> fand ich f&uuml;r meinen groﬂen SD Kartenadapter, der gleichzeitig als Breadboardadapter herhalten sollte, die entsprechenden Anschl&uuml;sse. Nachdem ich alles dem entsprechend verkabelt hatte, viel mir auf, dass in der Schaltung ung&uuml;nstiger Weise der Masse Draht mit 3,3V beschriftet war, sodass ich versehentlich mit dem Schalter die DO / PB0 Leitung auf Plus statt Masse gezogen habe. Beim Schreiben bemerke ich, dass das die Batterie Spannung kennzeichnen soll. <br />
-<a rel="facebox" href="pics/bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"><img src="pics/th_bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"></a>
+<a rel="facebox" href="pics/bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"><img src="../img/th_bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"></a>
 <br />
 <h2>2. Die Programmierung</h2>
 ... sollte eigentlich ein alter Hut sein, da ich inzwischen berufsbedingt an einem Mac arbeiten muss und diesen auch privat verwende, galt es aber AVRdude und AVR Burn-o-mat - treue Linux Gef&auml;hrten, nach zu installieren und einzurichten. Beim Programmieren des Attiny85 mit der vorkompilierten HEX File meckerte AVRdude aber, sodass ich wie auf der Seite vorgeschlagen die FUSE "Zeilen" per HEX Editor herausnehmen musste und nachtr&auml;glich per AVRdude setzen sollte. Dabei half mir <a href="http://www.engbedded.com/fusecalc/">http://www.engbedded.com/fusecalc/</a> ungemein, da es mir die AVRdude Argumente gleich mit angab. <br />
