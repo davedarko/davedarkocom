@@ -13,7 +13,6 @@ include('../parsedown/Parsedown.php');
 $Parsedown = new Parsedown();
 
 
-
 $file_name = "content/table.md";
 $myfile = fopen($file_name, "r") or die("Unable to open file!");
 $file_content = fread($myfile, filesize($file_name));
@@ -24,6 +23,22 @@ echo '<h1>Heading</h1>';
 echo $Parsedown->text('Hello _Parsedown_!');
 echo $Parsedown->text($file_content);
 echo '</div>';
+
+$dir = 'content';
+$files1 = scandir($dir);
+if (is_array($files1))
+{
+	echo '<ul>';
+	foreach ($files1 as $file)
+	{
+		echo '<li>';
+		echo $file;
+		echo '</li>';
+	}
+	echo '</ul>';
+}
+
+
 echo '</body>';
 echo '</html>';
 ?>
