@@ -64,9 +64,7 @@ if (is_array($files1))
 		) {
 			if (substr($file_name, -3) == '.md')
 			{
-				$myfile = fopen('content/'.$file_name, "r") or die("Unable to open file!");
-				$file_content = fread($myfile, filesize('content/'.$file_name));
-				fclose($myfile);
+				$file_content = file_get_contents('content/'.$file_name);
 				echo $Parsedown->text($file_content);	
 			}
 			
