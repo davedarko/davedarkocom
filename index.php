@@ -62,7 +62,7 @@ function make_that_filename_pretty($filename)
 
 function scan_and_list_folder($dir)
 {
-	$content_folder = scandir($dir);
+	$content_folder = scandir($dir, 1);
 	if (is_array($content_folder))
 	{
 		echo '<h3>';
