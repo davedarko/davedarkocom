@@ -31,8 +31,11 @@ if (is_array($files1))
 	echo '<ul>';
 	foreach ($files1 as $file)
 	{
+		// if (substr($file, -2))
 		echo '<li>';
 		echo $file;
+		echo ' - ';
+		echo substr($file, -2);
 		echo '</li>';
 	}
 	echo '</ul>';
