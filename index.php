@@ -41,7 +41,28 @@ echo '<div class="four columns">';
 echo scan_and_list_folder($dir);
 echo '</div>';
 echo '<div class="eight columns">';
-show_selected_page($dir, $page);
+if (isset($page))
+{
+	show_selected_page($dir, $page);	
+}
+else
+{
+	echo '<a href="https://twitter.com/davedarko">';
+	echo 'https://twitter.com/davedarko';
+	echo '</a><br>';
+
+	echo '<a href="https://www.youtube.com/davedarko">';
+	echo 'https://www.youtube.com/davedarko';
+	echo '</a><br>';
+
+	echo '<a href="https://www.instagram.com/davedarkocom/">';
+	echo 'https://www.instagram.com/davedarkocom/';
+	echo '</a><br>';
+
+	echo '<a href="https://github.com/davedarko/">';
+	echo 'https://github.com/davedarko/';
+	echo '</a><br>';
+}
 echo '</div>';
 echo '</div>';
 
