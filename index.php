@@ -6,6 +6,9 @@ echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
 echo '</style>';
+echo '<title>';
+echo 'davedarko.com';
+echo '</title>';
 echo '</head>';
 
 echo '<body>';
