@@ -13,7 +13,7 @@ echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
-include('css/font.min.css');
+// include('css/font.min.css');
 echo '</style>';
 echo '<title>';
 echo 'davedarko.com';
