@@ -57,7 +57,7 @@ if (is_array($files1))
 			isset($_GET['page']) &&
 			md5($file_name) == $_GET['page']
 		) {
-			$myfile = fopen($file_name, "r") or die("Unable to open file!");
+			$myfile = fopen('content/'.$file_name, "r") or die("Unable to open file!");
 			$file_content = fread($myfile, filesize($file_name));
 			fclose($myfile);
 			echo $Parsedown->text($file_content);
