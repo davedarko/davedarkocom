@@ -38,7 +38,7 @@ echo '<div class="container">';
 echo '<h1>davedarko</h1>';
 echo '<div class="row">';
 echo '<div class="four columns">';
-scan_and_list_folder($dir);
+echo scan_and_list_folder($dir);
 echo '</div>';
 echo '<div class="eight columns">';
 show_selected_page($dir, $page);
@@ -70,12 +70,15 @@ function make_that_filename_pretty($filename)
 function scan_and_list_folder($dir)
 {
 	$content_folder = scandir($dir, 1);
+
+	$files_output = '';
+	$output = '';
 	if (is_array($content_folder))
 	{
-		echo '<h3>';
-		echo make_that_filename_pretty($dir);
-		echo '</h3>';
-		echo '<ul>';
+		$output .= '<h3>';
+		$output .= make_that_filename_pretty($dir);
+		$output .= '</h3>';
+		$output .= '<ul>';
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
@@ -84,7 +87,7 @@ function scan_and_list_folder($dir)
 				$file_name != '.' &&
 				$file_name != '..'
 			) {				
-				scan_and_list_folder($file_path);
+				$output .= scan_and_list_folder($file_path);
 			}
 
 			if (
@@ -92,15 +95,17 @@ function scan_and_list_folder($dir)
 				substr($file_name, -4) == '.php' ||
 				substr($file_name, -5) == '.html'
 			) {
-				echo '<li>';
-				echo '<a href="index.php?page=' . $file_path . '">';
-				echo make_that_filename_pretty($file_name);
-				echo '</a>';
-				echo '</li>';
+				$files_output .= '<li>';
+				$files_output .= '<a href="index.php?page=' . $file_path . '">';
+				$files_output .= make_that_filename_pretty($file_name);
+				$files_output .= '</a>';
+				$files_output .= '</li>';
 			}
 		}
-		echo '</ul>';
+		$output .= $files_output;
+		$output .= '</ul>';
 	}
+	return $output;
 }
 
 function show_selected_page($dir, $page)
