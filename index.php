@@ -37,7 +37,7 @@ echo '<body>';
 echo '<div class="container">';
 echo '<h1>davedarko</h1>';
 echo '<div class="row">';
-echo '<div class="five column">';
+echo '<div class="five columns">';
 scan_and_list_folder($dir);
 echo '</div>';
 echo '<div class="seven columns">';
