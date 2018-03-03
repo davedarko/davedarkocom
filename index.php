@@ -68,15 +68,13 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
-			print_r($file_name);
-			
 			if (
 				is_dir($file_name) &&
 				$file_name != '.' &&
 				$file_name != '..'
 			) {
 				echo '<li>';
-				scan_and_list_folder($file_name);
+				scan_and_list_folder($dir . '/' . $file_name);
 				echo '</li>';
 			}
 
@@ -103,13 +101,12 @@ function show_selected_page($dir, $page)
 	{
 		foreach ($content_folder as $file_name)
 		{
-			print_r($file_name);
 			if (
 				is_dir($file_name) &&
 				$file_name != '.' &&
 				$file_name != '..'
 			) {
-				show_selected_page($file_name, $page);
+				show_selected_page($dir . '/' . $file_name, $page);
 			}
 
 			if (
