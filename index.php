@@ -71,12 +71,13 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
+			$file_path = $dir . '/' . $file_name;
 			if (
-				is_dir($dir . '/' . $file_name) &&
+				is_dir($file_path) &&
 				$file_name != '.' &&
 				$file_name != '..'
 			) {				
-				scan_and_list_folder($dir . '/' . $file_name);
+				scan_and_list_folder($file_path);
 			}
 
 			if (
@@ -85,7 +86,7 @@ function scan_and_list_folder($dir)
 				substr($file_name, -5) == '.html'
 			) {
 				echo '<li>';
-				echo '<a href="index.php?page='.$file_name.'">';
+				echo '<a href="index.php?page=' . $file_path . '">';
 				echo make_that_filename_pretty($file_name);
 				echo '</a>';
 				echo '</li>';
@@ -103,12 +104,13 @@ function show_selected_page($dir, $page)
 	{
 		foreach ($content_folder as $file_name)
 		{
+			$file_path = $dir . '/' . $file_name;
 			if (
-				is_dir($file_name) &&
+				is_dir($file_path) &&
 				$file_name != '.' &&
 				$file_name != '..'
 			) {
-				show_selected_page($dir . '/' . $file_name, $page);
+				show_selected_page($file_path, $page);
 			}
 
 			if (
@@ -117,7 +119,7 @@ function show_selected_page($dir, $page)
 			) {
 				if (substr($file_name, -3) == '.md')
 				{
-					$file_content = file_get_contents('content/'.$file_name);
+					$file_content = file_get_contents($file_path);
 					echo $Parsedown->text($file_content);	
 				}
 				
@@ -125,7 +127,7 @@ function show_selected_page($dir, $page)
 					substr($file_name, -4) == '.php' ||
 					substr($file_name, -5) == '.html'
 				) {
-					include('content/'.$file_name);
+					include($file_path);
 				}
 			}
 		}
