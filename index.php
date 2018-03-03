@@ -29,55 +29,53 @@ $Parsedown = new Parsedown();
 echo '<div class="container">';
 echo '<h1>davedarko</h1>';
 
-$dir = 'content';
-$content_folder = scandir($dir);
-if (is_array($content_folder))
+$page = null;
+if (isset($_GET['page']))
 {
-	echo '<ul>';
-	foreach ($content_folder as $file_name)
-	{
-		if (
-			substr($file_name, -3) == '.md' || 
-			substr($file_name, -4) == '.php' ||
-			substr($file_name, -5) == '.html'
-		) {
-			echo '<li>';
-			echo '<a href="index.php?page='.$file_name.'">';
-			echo make_that_filename_pretty($file_name);
-			echo '</a>';
-			echo '</li>';
-		}
-	}
-	echo '</ul>';
+	$page = $_GET['page'];
 }
 
-if (is_array($content_folder))
+$dir = 'content';
+scan_and_list_folder($dir);
+show_selected_page($dir, $page);
+
+function show_selected_page($dir, $page)
 {
-	echo '<div class="menu">';
-	echo '<ul>';
-	foreach ($content_folder as $file_name)
+	$content_folder = scandir($dir);
+	if (is_array($content_folder))
 	{
-		if (
-			isset($_GET['page']) &&
-			$file_name == $_GET['page']
-		) {
-			if (substr($file_name, -3) == '.md')
-			{
-				$file_content = file_get_contents('content/'.$file_name);
-				echo $Parsedown->text($file_content);	
-			}
-			
+		foreach ($content_folder as $file_name)
+		{
 			if (
-				substr($file_name, -4) == '.php' ||
-				substr($file_name, -5) == '.html'
+				is_dir($file_name) &&
+				$file_name != '.' &&
+				$file_name != '..'
 			) {
-				include('content/'.$file_name);
+				show_selected_page($file_name, $page);
+			}
+
+			if (
+				isset($page) &&
+				$file_name == $page
+			) {
+				if (substr($file_name, -3) == '.md')
+				{
+					$file_content = file_get_contents('content/'.$file_name);
+					echo $Parsedown->text($file_content);	
+				}
+				
+				if (
+					substr($file_name, -4) == '.php' ||
+					substr($file_name, -5) == '.html'
+				) {
+					include('content/'.$file_name);
+				}
 			}
 		}
 	}
-	echo '</ul>';
-	echo '</div>';
 }
+
+
 
 echo '</div>';
 
@@ -98,7 +96,41 @@ function make_that_filename_pretty($filename)
 	}
 	else
 	{
-		return explode('.', $filename)[0];
+		return str_replace('_', ' ', explode('.', $filename)[0]);
+	}
+}
+
+function scan_and_list_folder($dir)
+{
+	$content_folder = scandir($dir);
+	if (is_array($content_folder))
+	{
+		echo '<ul>';
+		foreach ($content_folder as $file_name)
+		{
+			if (
+				is_dir($file_name) &&
+				$file_name != '.' &&
+				$file_name != '..'
+			) {
+				echo '<li>';
+				scan_and_list_folder($file_name);
+				echo '</li>';
+			}
+
+			if (
+				substr($file_name, -3) == '.md' || 
+				substr($file_name, -4) == '.php' ||
+				substr($file_name, -5) == '.html'
+			) {
+				echo '<li>';
+				echo '<a href="index.php?page='.$file_name.'">';
+				echo make_that_filename_pretty($file_name);
+				echo '</a>';
+				echo '</li>';
+			}
+		}
+		echo '</ul>';
 	}
 }
 ?>
