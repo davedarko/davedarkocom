@@ -67,17 +67,17 @@ Inzwischen sind die LEDs sogar rot, damit etwas authentischer... <br>
 
 	<param name="link" value="http://www.davedarko.com/kit.php"/> 
 
- 	<param name="path0" value="http://www.davedarko.com/pics/kitt/kitt-start.png" />
+ 	<param name="path0" value="../img/kitt/kitt-start.png" />
 
- 	<param name="path1" value="http://www.davedarko.com/pics/kitt/kitt-transistor.png" />
+ 	<param name="path1" value="../img/kitt/kitt-transistor.png" />
 
-	<param name="path2" value="http://www.davedarko.com/pics/kitt/kitt-diode.png" />
+	<param name="path2" value="../img/kitt/kitt-diode.png" />
 
-	<param name="path3" value="http://www.davedarko.com/pics/kitt/kitt-vorwiderstand.png" />
+	<param name="path3" value="../img/kitt/kitt-vorwiderstand.png" />
 
-	<param name="path4" value="http://www.davedarko.com/pics/kitt/kitt-kondensator.png" />
+	<param name="path4" value="../img/kitt/kitt-kondensator.png" />
 
-	<param name="path5" value="http://www.davedarko.com/pics/kitt/kitt-links.png" />
+	<param name="path5" value="../img/kitt/kitt-links.png" />
 
 	<param name="anzahl" value="6" />
 
