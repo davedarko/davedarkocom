@@ -117,6 +117,9 @@ function show_selected_page($dir, $page)
 				show_selected_page($file_path, $page);
 			}
 
+			echo '<br>';
+			echo ($file_name == $page)?'yes':'no';
+
 			if (
 				isset($page) &&
 				$file_name == $page
@@ -139,4 +142,5 @@ function show_selected_page($dir, $page)
 		}
 	}
 }
+
 ?>
