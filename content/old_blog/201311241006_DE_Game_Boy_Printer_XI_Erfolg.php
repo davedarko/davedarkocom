@@ -10,7 +10,7 @@ Mein erster Ansatz zum Bilder speichern erfolgte pro Zeile mit dem Wert 0,1,2,3 
 <li>2 Zeilen f&uuml;r einen Informationsschub</li>
 </ul>
 <strong>2 Bytes * 8 Linien * 20 Bl&ouml;cke * 2 Zeilen = 640 Bytes</strong><p>
-<a rel="facebox" href="../img/20131124_0038072013-11-24.jpg"><img src="../img/th_20131124_0038072013-11-24.jpg"></a> 
-<img src="../gameboy-php/gbapp_converter.php?file=../gameboyapp/20120101044519-TUXIES.dat&color=ffddbb">
+<a rel="facebox" href="img/20131124_0038072013-11-24.jpg"><img src="img/th_20131124_0038072013-11-24.jpg"></a> 
+<img src="gameboy-php/gbapp_converter.php?file=img/gb/20120101044519-TUXIES.dat&color=ffddbb">
 <br />
 <p>Tags: gameboy printer

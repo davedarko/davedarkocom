@@ -25,9 +25,9 @@ Es fehlt noch die Integration der warmwei&szlig;en LED und der UV LED und eine m
 <br />
 <h3>Bilder</h3>
 
-<a rel="facebox" href="../img/20130507_0105442013-05-07.jpg"><img src="../img/th_20130507_0105442013-05-07.jpg"></a>
-<a rel="facebox" href="../img/20130503_2222352013-05-03.jpg"><img src="../img/th_20130503_2222352013-05-03.jpg"></a>
-<a rel="facebox" href="../img/led2013-05-03.jpg"><img src="../img/th_led2013-05-03.jpg"></a>
+<a rel="facebox" href="img/20130507_0105442013-05-07.jpg"><img src="img/th_20130507_0105442013-05-07.jpg"></a>
+<a rel="facebox" href="img/20130503_2222352013-05-03.jpg"><img src="img/th_20130503_2222352013-05-03.jpg"></a>
+<a rel="facebox" href="img/led2013-05-03.jpg"><img src="img/th_led2013-05-03.jpg"></a>
 <p>
 <h3>Links</h3>
 GIT: [<a target="blank" href="https://github.com/davedarko/sonic_screwdriver">https://github.com/davedarko/sonic_screwdriver</a>]<br>

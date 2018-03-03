@@ -1,6 +1,6 @@
 <h2>GB - Printer ... eine Tr&auml;umerei</h2>
 29.10.2009 - 11:31<p>
-<img width="100%" src="../img/gbprinter.png"><br />
+<img width="100%" src="img/gbprinter.png"><br />
 <br />
 Eine kleine Tr&auml;umerei...<br />
 <br />

@@ -38,5 +38,5 @@ In der KI Vorlesung habe ich aus mangelndem Verst&auml;ndnis und Interesse (Such
 <br />
 <h2>Aussehen</h2>
  - gut vorstellbar w&auml;re eine Pinguin Figur, etwa wie Tux<p />
-<img src="../img/angrytux.png"><br />
+<img src="img/angrytux.png"><br />
 <br />

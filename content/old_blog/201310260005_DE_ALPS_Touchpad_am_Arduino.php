@@ -8,8 +8,8 @@ Ein wenig schlau googlen und ich fand heraus, dass die meisten Touchpads wohl &u
 <h2>Pinbelegung</h2>
 Anhand der unterschiedlichen ALPS Pads und dem Oscillator dessen Mittelbein gegen Masse geht und meinem Multimeter auf Widerstandsmessung eingestellt, konnte ich die Pinbelegung dann doch schnell bestimmen. Mein reaktiviertes Atmega8 Board, welches ich Arduino IDE f&auml;hig l&ouml;tete sendet mir nun &uuml;ber die serielle Schnittstelle die X und Y Differenzen, die mein Fingerstreifen ausl&ouml;sen.
 <hr>
-<a rel="facebox" href="../img/20131026_0009292013-10-26.jpg"><img src="../img/th_20131026_0009292013-10-26.jpg"></a>
-<a rel="facebox" href="../img/20131026_0007452013-10-26.jpg"><img src="../img/th_20131026_0007452013-10-26.jpg"></a>
+<a rel="facebox" href="img/20131026_0009292013-10-26.jpg"><img src="img/th_20131026_0009292013-10-26.jpg"></a>
+<a rel="facebox" href="img/20131026_0007452013-10-26.jpg"><img src="img/th_20131026_0007452013-10-26.jpg"></a>
 <br>
 <h2>Die wichtigsten Links</h2>
 Der Weg zur Arduino Bibliothek und dem Example Sketch - bei neueren Versionen der Arduino Umgebung muss noch eine Zeile in der Header Datei ps2.h ge&auml;ndert werdenHier soll "WProgram.h" mit "Arduino.h" ersetzt werden.
