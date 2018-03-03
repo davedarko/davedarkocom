@@ -71,8 +71,13 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
+			print_pre(array(
+				$dir . '/' . $file_name),
+				is_dir($dir . '/' . $file_name)
+			);
+
 			if (
-				is_dir($file_name) &&
+				is_dir($dir . '/' . $file_name) &&
 				$file_name != '.' &&
 				$file_name != '..'
 			) {
@@ -99,6 +104,7 @@ function scan_and_list_folder($dir)
 
 function show_selected_page($dir, $page)
 {
+	global $Parsedown;
 	$content_folder = scandir($dir);
 	if (is_array($content_folder))
 	{
