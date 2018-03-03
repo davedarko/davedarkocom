@@ -30,11 +30,11 @@ echo '<div class="container">';
 echo '<h1>davedarko</h1>';
 
 $dir = 'content';
-$files1 = scandir($dir);
-if (is_array($files1))
+$content_folder = scandir($dir);
+if (is_array($content_folder))
 {
 	echo '<ul>';
-	foreach ($files1 as $file_name)
+	foreach ($content_folder as $file_name)
 	{
 		if (
 			substr($file_name, -3) == '.md' || 
@@ -51,11 +51,11 @@ if (is_array($files1))
 	echo '</ul>';
 }
 
-if (is_array($files1))
+if (is_array($content_folder))
 {
 	echo '<div class="menu">';
 	echo '<ul>';
-	foreach ($files1 as $file_name)
+	foreach ($content_folder as $file_name)
 	{
 		if (
 			isset($_GET['page']) &&
