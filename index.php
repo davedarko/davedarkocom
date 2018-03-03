@@ -13,7 +13,8 @@ echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
-include('css/font.min.css'); // fonts will be cached
+include('css/font.min.css'); // fonts will be cached, so it's fine
+include('css/custom.min.css');
 echo '</style>';
 echo '<title>';
 echo 'davedarko.com';
@@ -38,7 +39,8 @@ if (is_array($files1))
 	{
 		if (
 			substr($file_name, -3) == '.md' || 
-			substr($file_name, -4) == '.php'
+			substr($file_name, -4) == '.php' ||
+			substr($file_name, -5) == '.html'
 		) {
 			echo '<li>';
 			echo '<a href="index.php?page='.$file_name.'">';
@@ -52,6 +54,7 @@ if (is_array($files1))
 
 if (is_array($files1))
 {
+	echo '<div class="menu">';
 	echo '<ul>';
 	foreach ($files1 as $file_name)
 	{
@@ -66,13 +69,18 @@ if (is_array($files1))
 				fclose($myfile);
 				echo $Parsedown->text($file_content);	
 			}
-			if (substr($file_name, -4) == '.php')
-			{
+			
+			if (
+				substr($file_name, -4) == '.php' ||
+				substr($file_name, -5) == '.html'
+			) {
 				include('content/'.$file_name);
 			}
+			
 		}
 	}
 	echo '</ul>';
+	echo '</div>';
 }
 
 echo '</div>';
