@@ -105,6 +105,7 @@ function show_selected_page($dir, $page)
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
+			print_r($file_path);
 			if (
 				is_dir($file_path) &&
 				$file_name != '.' &&
