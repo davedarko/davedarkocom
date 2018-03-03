@@ -122,11 +122,11 @@ function show_selected_page($dir, $page)
 			echo ' ';
 			echo gettype($page);
 			echo ' ';
-			echo length($page);
+			echo strlen($page);
 			echo ' ';
 			echo gettype($file_name);
 			echo ' ';
-			echo length($file_name);
+			echo strlen($file_name);
 			
 			if (
 				isset($page) &&
