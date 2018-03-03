@@ -1,6 +1,10 @@
-<link rel="stylesheet" href="../Skeleton/css/normalize.css">
-<link rel="stylesheet" href="../Skeleton/css/skeleton.css">
 <?php
+
+echo '<style>';
+include('../Skeleton/css/normalize.css');
+include('../Skeleton/css/skeleton.css');
+echo '</style>';
+
 include('../parsedown/Parsedown.php');
 $Parsedown = new Parsedown();
 
