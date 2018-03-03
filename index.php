@@ -59,16 +59,20 @@ else
 	echo 'https://www.instagram.com/davedarkocom/';
 	echo '</a><br>';
 
-	echo '<a href="https://github.com/davedarko/">';
-	echo 'https://github.com/davedarko/';
+	echo '<a href="https://www.hackaday.io/davedarko">';
+	echo 'https://www.hackaday.io/davedarko';
 	echo '</a><br>';
 
 	echo '<a href="https://www.tindie.com/stores/davedarko/">';
 	echo 'https://www.tindie.com/stores/davedarko/';
 	echo '</a><br>';
-	
-	echo '<a href="https://www.hackaday.io/davedarko">';
-	echo 'https://www.hackaday.io/davedarko';
+
+	echo '<a href="https://github.com/davedarko/">';
+	echo 'https://github.com/davedarko/';
+	echo '</a><br>';
+
+	echo '<a href="https://www.thingiverse.com/davedarko/about">';
+	echo 'https://www.thingiverse.com/davedarko/about';
 	echo '</a><br>';
 	
 }
