@@ -34,13 +34,13 @@ $files1 = scandir($dir);
 if (is_array($files1))
 {
 	echo '<ul>';
-	foreach ($files1 as $file)
+	foreach ($files1 as $file_name)
 	{
-		if (substr($file, -3) == '.md')
+		if (substr($file_name, -3) == '.md')
 		{
 			echo '<li>';
-			echo '<a href="index.php?page='.md5($file).'">';
-			echo $file;
+			echo '<a href="index.php?page='.md5($file_name).'">';
+			echo $file_name;
 			echo '</a>';
 			echo '</li>';
 		}
@@ -57,10 +57,17 @@ if (is_array($files1))
 			isset($_GET['page']) &&
 			md5($file_name) == $_GET['page']
 		) {
-			$myfile = fopen('content/'.$file_name, "r") or die("Unable to open file!");
-			$file_content = fread($myfile, filesize('content/'.$file_name));
-			fclose($myfile);
-			echo $Parsedown->text($file_content);
+			if (substr($file_name, -3) == '.md')
+			{
+				$myfile = fopen('content/'.$file_name, "r") or die("Unable to open file!");
+				$file_content = fread($myfile, filesize('content/'.$file_name));
+				fclose($myfile);
+				echo $Parsedown->text($file_content);	
+			}
+			if (substr($file_name, -4) == '.php')
+			{
+				include('content/'.$file_name);
+			}
 		}
 	}
 	echo '</ul>';
