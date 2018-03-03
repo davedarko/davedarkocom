@@ -1,0 +1,3 @@
+<h2>RGB Fenster</h2>
+04.11.2009 - 13:06<p>
+Hierso beim Abwaschen in der Küche, fällt mir doch auf, das was fehlt... ich brauch hier eigentlich ein Fenster... so Acrylglas mit der Hood drauf raufgemalt und rgb LEDs hinter... das wär mal geil...
