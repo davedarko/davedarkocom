@@ -1,9 +1,6 @@
 <h2>Simple SD Audio Player (mono) von ELM-chan.org</h2>
 18.10.2013 - 20:59<p>
-Eine Zeit lang habe ich interessante Projekte rund um die AVRs gesucht und bin w&auml;hrend dessen auf den Audio Player von elm-chan.org gesto&szlig;en, der mit einem Attiny85 und einem SD Kartenslot auskommt. In der Fortsetzung beschreibe ich die Probleme auf die ich gesto&szlig;en bin und worauf eventuell zu achten ist.<p> <h2>0. Die Grundstimmung</h2><br />
-Einfach ein gutes Gef&uuml;hl, beim l&ouml;ten den Iron Man Soundtrack laufen zu lassen.<br />
-<iframe width="560" height="32" src="//www.youtube.com/embed/videoseries?list=PL3C2CF7FD75CB61B4" frameborder="0" allowfullscreen></iframe><br />
-<br />
+Eine Zeit lang habe ich interessante Projekte rund um die AVRs gesucht und bin w&auml;hrend dessen auf den Audio Player von elm-chan.org gesto&szlig;en, der mit einem Attiny85 und einem SD Kartenslot auskommt. In der Fortsetzung beschreibe ich die Probleme auf die ich gesto&szlig;en bin und worauf eventuell zu achten ist.<p>
 <h2>1. Der SD Karten Adapter</h2>
 Die Zeichnung der Schaltung auf elm-chan.org bezieht sich auf die Anschl&uuml;sse eines MicroSD Adapters. Auf <a href="http://elasticsheep.com/2010/01/reading-an-sd-card-with-an-atmega168/">http://elasticsheep.com/</a> fand ich f&uuml;r meinen gro&szlig;en SD Kartenadapter, der gleichzeitig als Breadboardadapter herhalten sollte, die entsprechenden Anschl&uuml;sse. Nachdem ich alles dem entsprechend verkabelt hatte, viel mir auf, dass in der Schaltung ung&uuml;nstiger Weise der Masse Draht mit 3,3V beschriftet war, sodass ich versehentlich mit dem Schalter die DO / PB0 Leitung auf Plus statt Masse gezogen habe. Beim Schreiben bemerke ich, dass das die Batterie Spannung kennzeichnen soll. <br />
 <a rel="facebox" href="../img/bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"><img src="../img/th_bg63aNyL59PYYre0td1QDYHA2013-10-18.jpg"></a>

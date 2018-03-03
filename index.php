@@ -106,7 +106,7 @@ function scan_and_list_folder($dir)
 function show_selected_page($dir, $page)
 {
 	global $Parsedown;
-	$content_folder = scandir($dir);
+	$content_folder = scandir($dir, 1);
 	if (is_array($content_folder))
 	{
 		foreach ($content_folder as $file_name)
