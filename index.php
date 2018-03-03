@@ -87,12 +87,18 @@ echo '</html>';
 function make_that_filename_pretty($filename)
 {
 	$time = substr($filename, 0, 14);
-	$lang = substr($filename, 15, 2);
-	$name = substr($filename, 18);
 
-	$name_arr = explode('.', $name);
-	$name = $name_arr[0];
-
-	return $name . ' ['.$lang.'] ' . $time;
+	if (is_numeric($time))
+	{
+		$lang = substr($filename, 15, 2);
+		$name = substr($filename, 18);
+		$name_arr = explode('.', $name);
+		$name = $name_arr[0];
+		return $name . ' ['.$lang.'] ' . $time;
+	}
+	else
+	{
+		return explode('.', $filename)[0];
+	}
 }
 ?>
