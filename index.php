@@ -67,6 +67,10 @@ else
 	echo 'https://www.tindie.com/stores/davedarko/';
 	echo '</a><br>';
 	
+	echo '<a href="https://www.hackaday.io/davedarko">';
+	echo 'https://www.hackaday.io/davedarko';
+	echo '</a><br>';
+	
 }
 echo '</div>';
 echo '</div>';
