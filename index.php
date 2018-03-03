@@ -44,12 +44,12 @@ echo '</html>';
 
 function make_that_filename_pretty($filename)
 {
-	$time = substr($filename, 0, 14);
+	$time = substr($filename, 0, 12);
 
 	if (is_numeric($time))
 	{
-		$lang = substr($filename, 15, 2);
-		$name = substr($filename, 18);
+		$lang = substr($filename, 13, 2);
+		$name = substr($filename, 16);
 		$name_arr = explode('.', $name);
 		$name = str_replace('_', ' ', $name_arr[0]);
 		return $name . ' ['.$lang.'] ' . $time;
