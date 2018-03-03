@@ -5,16 +5,16 @@
 <script>google.load("swfobject", "2.2");</script>
 </head>
 <audio controls>
-  <source src="ireland_crossing.mp3" type="audio/mpeg" />
-  <source src="ireland_crossing.ogg" type="audio/ogg" />
+  <source src="../snd/ireland_crossing.mp3" type="audio/mpeg" />
+  <source src="../snd/ireland_crossing.ogg" type="audio/ogg" />
   <object class="playerpreview" type="application/x-shockwave-flash" 
           data="player_mp3_mini.swf" width="200" height="20">
     <param name="movie" value="player_mp3_mini.swf" />
     <param name="bgcolor" value="#085c68" />
-    <param name="FlashVars" value="mp3=ireland_crossing.ogg" />
+    <param name="FlashVars" value="mp3=../snd/ireland_crossing.ogg" />
     <embed href="player_mp3_mini.swf" bgcolor="#085c68" width="200"
            height="20" name="movie" align=""
-           type="application/x-shockwave-flash" flashvars="mp3=ireland_crossing.ogg">
+           type="application/x-shockwave-flash" flashvars="mp3=../snd/ireland_crossing.ogg">
     </embed>
   </object>
 </audio>
@@ -30,11 +30,11 @@
         "20", 
         "9.0.0",
         "",
-        {"mp3":"ireland_crossing.mp3"}, 
+        {"mp3":"../snd/ireland_crossing.mp3"}, 
         {"bgcolor":"#085c68"});
     }
   }
 </script><br>
-<a href="ireland_crossing.ogg">ireland_crossing.ogg</a><br>
-<a href="ireland_crossing.mp3">ireland_crossing.mp3</a><br>
-<a href="ireland_crossing.m4r">ireland_crossing.m4r</a><br>
+<a href="../snd/ireland_crossing.ogg">ireland_crossing.ogg</a><br>
+<a href="../snd/ireland_crossing.mp3">ireland_crossing.mp3</a><br>
+<a href="../snd/ireland_crossing.m4r">ireland_crossing.m4r</a><br>
