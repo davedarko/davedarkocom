@@ -105,10 +105,7 @@ function show_selected_page($dir, $page)
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
-			echo '<br>';
-			echo $file_path;
-			echo ' vs. ';
-			echo $page;
+
 			if (
 				is_dir($file_path) &&
 				$file_name != '.' &&
@@ -117,23 +114,10 @@ function show_selected_page($dir, $page)
 				show_selected_page($file_path, $page);
 			}
 
-			echo '<br>';
-			echo ($file_name == $page)?'yes':'no';
-			echo ' ';
-			echo gettype($page);
-			echo ' ';
-			echo strlen($page);
-			echo ' ';
-			echo gettype($file_name);
-			echo ' ';
-			echo strlen($file_name);
-			
 			if (
 				isset($page) &&
-				$file_name == $page
+				$file_path == $page
 			) {
-				echo '<br>';
-				echo 'you should definitely see the content';
 				if (substr($file_name, -3) == '.md')
 				{
 					$file_content = file_get_contents($file_path);
