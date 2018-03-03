@@ -9,12 +9,11 @@ echo '<meta name="author" content="">';
 echo '<!-- Mobile Specific Metas -->';
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 
-echo '<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">';
-
 echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
+include('css/font.min.css');
 echo '</style>';
 echo '<title>';
 echo 'davedarko.com';
