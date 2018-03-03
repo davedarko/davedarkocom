@@ -13,7 +13,7 @@ echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
 include('css/skeleton.min.css');
-include('css/font.min.css'); // fonts will be cached, so it's fine
+include('css/font.min.css');
 include('css/custom.min.css');
 echo '</style>';
 echo '<title>';
@@ -28,7 +28,6 @@ $Parsedown = new Parsedown();
 
 echo '<div class="container">';
 echo '<h1>davedarko</h1>';
-// echo $Parsedown->text('Hello _Parsedown_!');
 
 $dir = 'content';
 $files1 = scandir($dir);
@@ -74,7 +73,6 @@ if (is_array($files1))
 			) {
 				include('content/'.$file_name);
 			}
-			
 		}
 	}
 	echo '</ul>';
