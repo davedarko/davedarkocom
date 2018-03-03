@@ -62,6 +62,11 @@ else
 	echo '<a href="https://github.com/davedarko/">';
 	echo 'https://github.com/davedarko/';
 	echo '</a><br>';
+
+	echo '<a href="https://www.tindie.com/stores/davedarko/">';
+	echo 'https://www.tindie.com/stores/davedarko/';
+	echo '</a><br>';
+	
 }
 echo '</div>';
 echo '</div>';
