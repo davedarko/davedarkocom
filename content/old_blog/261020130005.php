@@ -1,6 +1,6 @@
 <h2>ALPS Touchpad am Arduino</h2>
 26.10.2013 - 00:05<p>
-W&auml;hrend meiner Sortier und Aufr&auml;umaktionen, die meistens eher im Chaos oder der puren Verzweiflung enden, bin ich auf ein altes Touchpad aus meinem Notebook gestoﬂen. Ich muss wohl gedacht haben, wenn da nur vier Kontakte zum Notebook gehen, sollte man damit sicher noch mal was anfangen k&ouml;nnen.
+W&auml;hrend meiner Sortier und Aufr&auml;umaktionen, die meistens eher im Chaos oder der puren Verzweiflung enden, bin ich auf ein altes Touchpad aus meinem Notebook gesto&szlig;en. Ich muss wohl gedacht haben, wenn da nur vier Kontakte zum Notebook gehen, sollte man damit sicher noch mal was anfangen k&ouml;nnen.
 <h2>Einleitung</h2>
 Ein wenig schlau googlen und ich fand heraus, dass die meisten Touchpads wohl &uuml;ber PS / 2 kommunizieren. Ein Protokoll was ich des &ouml;fteren auf der Hackaday Seite in Benutzung mit Mikrocontrollern sah und schnell die ersten Projekte fand.<br />
 <h2>Pinbelegung</h2>

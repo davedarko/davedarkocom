@@ -1,6 +1,6 @@
 Nachdem meine Bilder irgendwie doch ziemlich falsch formatiert waren, habe ich mit php den Export nach den neuesten Erkenntnissen variiert.
 
-Beim eintragen in den Arduino Code und &uuml;bertragen sind mir meine zwei Import Nanos immer abgeschmiert, bis ich feststellen musste, dass die dann tats&auml;chlich keine 30000 bytes sondern nur 6500 bytes speichern k&ouml;nnen. Im allgemeinen weniger ein Problem, da meine Skripte eh nicht so groß werden, aber doch schon ein wenig frech. Wer allerdings ein 5tel bezahlt, sollte sich &uuml;ber ein 5tel Leistung nicht beschweren.
+Beim eintragen in den Arduino Code und &uuml;bertragen sind mir meine zwei Import Nanos immer abgeschmiert, bis ich feststellen musste, dass die dann tats&auml;chlich keine 30000 bytes sondern nur 6500 bytes speichern k&ouml;nnen. Im allgemeinen weniger ein Problem, da meine Skripte eh nicht so gro&szlig; werden, aber doch schon ein wenig frech. Wer allerdings ein 5tel bezahlt, sollte sich &uuml;ber ein 5tel Leistung nicht beschweren.
 
 ![don't know what that is](../img/20131124_0038072013-11-24.jpg "don't know what that is")
 

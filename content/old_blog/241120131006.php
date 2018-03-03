@@ -1,7 +1,7 @@
 <h2>Gameboy Printer XI - Success</h2>
 24.11.2013 - 10:06<p>
 Nachdem meine Bilder irgendwie doch ziemlich falsch formatiert waren, habe ich mit php den Export nach den neuesten Erkenntnissen variiert. <br />
-Beim eintragen in den Arduino Code und &uuml;bertragen sind mir meine zwei Import Nanos immer abgeschmiert, bis ich feststellen musste, dass die dann tats&auml;chlich keine 30000 bytes sondern nur 6500 bytes speichern k&ouml;nnen. Im allgemeinen weniger ein Problem, da meine Skripte eh nicht so groﬂ werden, aber doch schon ein wenig frech. Wer allerdings ein 5tel bezahlt, sollte sich &uuml;ber ein 5tel Leistung nicht beschweren.<br />
+Beim eintragen in den Arduino Code und &uuml;bertragen sind mir meine zwei Import Nanos immer abgeschmiert, bis ich feststellen musste, dass die dann tats&auml;chlich keine 30000 bytes sondern nur 6500 bytes speichern k&ouml;nnen. Im allgemeinen weniger ein Problem, da meine Skripte eh nicht so gro&szlig; werden, aber doch schon ein wenig frech. Wer allerdings ein 5tel bezahlt, sollte sich &uuml;ber ein 5tel Leistung nicht beschweren.<br />
 <br />
 Mein erster Ansatz zum Bilder speichern erfolgte pro Zeile mit dem Wert 0,1,2,3 pro Pixel. Der Gameboy &uuml;bertr&auml;gt alles aber irgendwie anders. Ein 16 * 160 Block ist aufgeteilt in <br />
 <ul>

@@ -1,6 +1,6 @@
 <h2>Timelapse</h2>
 10.05.2013 - 18:49<p>
-Als Basis dient die Schl&uuml;sselanh&auml;nger Kamera, bei eBay so ziemlich das g&uuml;nstigste Modell - rund 6 Euro. Mit einem durchgebrannten Arduino auf dem ein leicht abgewandeltes blink Script l&auml;uft, und zwei Widerst&auml;nden und NPN Transistoren war es mir m&ouml;glich die Kamera zu starten und alle 4 Sekunden ein Foto machen zu lassen. Mit einem gr&ouml;ﬂeren Akku sollte somit eine ziemlich Groﬂe Zeitspanne erfasst werden k&ouml;nnen. Der Arduino ist sicherlich noch overkill, aber ich hab eigentlich noch f&uuml;nf Millionen andere Sachen zu tun... . ist ja noch ein Jahr hin.<br />
+Als Basis dient die Schl&uuml;sselanh&auml;nger Kamera, bei eBay so ziemlich das g&uuml;nstigste Modell - rund 6 Euro. Mit einem durchgebrannten Arduino auf dem ein leicht abgewandeltes blink Script l&auml;uft, und zwei Widerst&auml;nden und NPN Transistoren war es mir m&ouml;glich die Kamera zu starten und alle 4 Sekunden ein Foto machen zu lassen. Mit einem gr&ouml;&szlig;eren Akku sollte somit eine ziemlich Gro&szlig;e Zeitspanne erfasst werden k&ouml;nnen. Der Arduino ist sicherlich noch overkill, aber ich hab eigentlich noch f&uuml;nf Millionen andere Sachen zu tun... . ist ja noch ein Jahr hin.<br />
 <br />
 Zuerst musste ich herausfinden, wo Plus und Minus anliegt. Die Taster f&uuml;r das Ein- und Ausschalten und das Knipsen waren unterschiedlich gepolt. Der Arduino l&auml;uft einfach mit der Lipo Spannung mit. <br />
 <p>

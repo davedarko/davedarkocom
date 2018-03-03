@@ -21,7 +21,7 @@ der sich um folgende Dinge k&uuml;mmern wird / bereits auch schon tut:<br />
 <br />
 Momentan ist der Speicher zu einem Drittel in Benutzung - nicht schlecht, wenn man bedenkt, dass die IR und 433MHz Remote Bibliothek schon drin ist.<br />
 <br />
-Es fehlt noch die Integration der warmweiﬂen LED und der UV LED und eine m&ouml;glichst gescheite Anzeige der Men&uuml;punkte, allzu viele PINS bleiben nicht mehr - geplant war eigentlich eine der kleinen 5x7 LED Matrizen zu benutzen. Nur ein PWM ist noch &uuml;ber (Warmweiss?). UV werde ich nicht regeln m&uuml;ssen, denke ich. Zur Not liegt noch der ein oder andere Attiny45 in der Kiste, sodass ich die RGBs ausgliedern k&ouml;nnte.<br />
+Es fehlt noch die Integration der warmwei&szlig;en LED und der UV LED und eine m&ouml;glichst gescheite Anzeige der Men&uuml;punkte, allzu viele PINS bleiben nicht mehr - geplant war eigentlich eine der kleinen 5x7 LED Matrizen zu benutzen. Nur ein PWM ist noch &uuml;ber (Warmweiss?). UV werde ich nicht regeln m&uuml;ssen, denke ich. Zur Not liegt noch der ein oder andere Attiny45 in der Kiste, sodass ich die RGBs ausgliedern k&ouml;nnte.<br />
 <br />
 <h3>Bilder</h3>
 
