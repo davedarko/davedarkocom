@@ -24,7 +24,6 @@ echo '<body>';
 include('../parsedown/Parsedown.php');
 $Parsedown = new Parsedown();
 
-
 $file_name = "content/table.md";
 $myfile = fopen($file_name, "r") or die("Unable to open file!");
 $file_content = fread($myfile, filesize($file_name));
@@ -47,9 +46,9 @@ if (is_array($files1))
 		if (substr($file, -3) == '.md')
 		{
 			echo '<li>';
+			echo '<a href="index.php?page='.password_hash($file).'">';
 			echo $file;
-			echo ' - ';
-			echo substr($file, -3);
+			echo '</a>';
 			echo '</li>';	
 		}
 	}
