@@ -71,7 +71,7 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
-			print_pre(array(
+			print_r(array(
 				$dir . '/' . $file_name),
 				is_dir($dir . '/' . $file_name)
 			);
