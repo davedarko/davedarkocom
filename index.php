@@ -107,7 +107,8 @@ function show_selected_page($dir, $page)
 			$file_path = $dir . '/' . $file_name;
 			echo '<br>';
 			echo $file_path;
-			
+			echo ' vs. ';
+			echo $page;
 			if (
 				is_dir($file_path) &&
 				$file_name != '.' &&
