@@ -11,7 +11,7 @@ Franz&ouml;sisch - Googledeutsch : Google<br />
 Googledeutsch - Deutsch : Dave<br />
 <h2>Geschichte</h2>
 Der Game Boy Printer ist ein Thermo-Drucker der als Zubeh&ouml;r f&uuml;r den Game Boy verkauft wurde. Entworfen und produziert wurde er von Seiko Instruments im Auftrag von Nintendo.
-Der Drucker war ein relativer Misserfolg, aber auch ein gut kalkuliertes Risiko, wie sich sp&auml;ter herausstellte. Seine Hauptfunktionen waren in erster Linie Pokémon und Fotos von der Gameboy Camera zu drucken.<p>
+Der Drucker war ein relativer Misserfolg, aber auch ein gut kalkuliertes Risiko, wie sich sp&auml;ter herausstellte. Seine Hauptfunktionen waren in erster Linie Pok&eacute;mon und Fotos von der Gameboy Camera zu drucken.<p>
 
 <h2>Hardware</h2>
 Die Mechanik ist noch verf&uuml;gbar MTP102. Das Druckpapier ist Thermopapier, 38mm breit und druckt 1,2 Streifen pro Minute (16 Pixel pro Zeile). Der Motor und das Thermo-Druckkopf werden mit 5V versorgt. Die Kern-Logik des Druckers ist ein 78011F (Datenblatt: mPD78018F), ein 8-Bit-Mikrocontroller, entwickelt und hergestellt von NEC im Namen der IIC. Es besitzt 8K ROM und 512 Byte RAM, erweiterbar auf bis zu 8K, durch einen externen Schaltkreis (was hier der Fall ist).Die Erweiterung des Arbeitsspeichers die hier in Frage kommt, ist ein 9264BLF-10L (Datenblatt: 9264BLF-10L ). RAM 64 K (8K). Die Schnittstelle zwischen dem Mikrocontroller und dem Thermo-Druckkopf wird mit zwei LB1721M realisiert (Datenblatt: LB1721M ), produziert von Sanyo, die Optokoppler sind Darlington Transistoren. Die &Uuml;berwachung von Spannung und Strom wird durch den M62290L sichergestellt (Datenblatt : M62290L/FP ) heute von Renesas hergestellt.<p>
