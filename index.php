@@ -93,7 +93,7 @@ function make_that_filename_pretty($filename)
 		$lang = substr($filename, 15, 2);
 		$name = substr($filename, 18);
 		$name_arr = explode('.', $name);
-		$name = $name_arr[0];
+		$name = str_replace('_', ' ', $name_arr[0]);
 		return $name . ' ['.$lang.'] ' . $time;
 	}
 	else
