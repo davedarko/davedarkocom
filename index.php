@@ -24,16 +24,10 @@ echo '<body>';
 include('../parsedown/Parsedown.php');
 $Parsedown = new Parsedown();
 
-$file_name = "content/table.md";
-$myfile = fopen($file_name, "r") or die("Unable to open file!");
-$file_content = fread($myfile, filesize($file_name));
-fclose($myfile);
 
 echo '<div class="container">';
-echo '<h1>Heading</h1>';
-echo $Parsedown->text('Hello _Parsedown_!');
-echo $Parsedown->text($file_content);
-
+echo '<h1>davedarko</h1>';
+// echo $Parsedown->text('Hello _Parsedown_!');
 
 $dir = 'content';
 $files1 = scandir($dir);
@@ -42,14 +36,31 @@ if (is_array($files1))
 	echo '<ul>';
 	foreach ($files1 as $file)
 	{
-		// if (substr($file, -2))
 		if (substr($file, -3) == '.md')
 		{
 			echo '<li>';
-			echo '<a href="index.php?page='.password_hash($file).'">';
+			echo '<a href="index.php?page='.md5($file).'">';
 			echo $file;
 			echo '</a>';
-			echo '</li>';	
+			echo '</li>';
+		}
+	}
+	echo '</ul>';
+}
+
+if (is_array($files1))
+{
+	echo '<ul>';
+	foreach ($files1 as $file_name)
+	{
+		if (
+			isset($_GET['page']) &&
+			md5($file_name) == $_GET['page']
+		) {
+			$myfile = fopen($file_name, "r") or die("Unable to open file!");
+			$file_content = fread($myfile, filesize($file_name));
+			fclose($myfile);
+			echo $Parsedown->text($file_content);
 		}
 	}
 	echo '</ul>';
