@@ -120,11 +120,11 @@ function show_selected_page($dir, $page)
 			echo '<br>';
 			echo ($file_name == $page)?'yes':'no';
 			echo ' ';
-			echo type($page);
+			echo gettype($page);
 			echo ' ';
 			echo length($page);
 			echo ' ';
-			echo type($file_name);
+			echo gettype($file_name);
 			echo ' ';
 			echo length($file_name);
 			
