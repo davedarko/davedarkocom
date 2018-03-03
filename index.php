@@ -36,10 +36,12 @@ if (is_array($files1))
 	echo '<ul>';
 	foreach ($files1 as $file_name)
 	{
-		if (substr($file_name, -3) == '.md')
-		{
+		if (
+			substr($file_name, -3) == '.md' || 
+			substr($file_name, -4) == '.php'
+		) {
 			echo '<li>';
-			echo '<a href="index.php?page='.md5($file_name).'">';
+			echo '<a href="index.php?page='.$file_name.'">';
 			echo $file_name;
 			echo '</a>';
 			echo '</li>';
@@ -55,7 +57,7 @@ if (is_array($files1))
 	{
 		if (
 			isset($_GET['page']) &&
-			md5($file_name) == $_GET['page']
+			$file_name == $_GET['page']
 		) {
 			if (substr($file_name, -3) == '.md')
 			{
