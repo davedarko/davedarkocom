@@ -71,19 +71,12 @@ function scan_and_list_folder($dir)
 		echo '<ul>';
 		foreach ($content_folder as $file_name)
 		{
-			print_r(array(
-				$dir . '/' . $file_name),
-				is_dir($dir . '/' . $file_name)
-			);
-
 			if (
 				is_dir($dir . '/' . $file_name) &&
 				$file_name != '.' &&
 				$file_name != '..'
-			) {
-				echo '<li>';
+			) {				
 				scan_and_list_folder($dir . '/' . $file_name);
-				echo '</li>';
 			}
 
 			if (
