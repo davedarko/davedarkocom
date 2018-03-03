@@ -22,7 +22,7 @@ echo '<div class="container">';
 echo '<h1>Heading</h1>';
 echo $Parsedown->text('Hello _Parsedown_!');
 echo $Parsedown->text($file_content);
-echo '</div>';
+
 
 $dir = 'content';
 $files1 = scandir($dir);
@@ -32,15 +32,19 @@ if (is_array($files1))
 	foreach ($files1 as $file)
 	{
 		// if (substr($file, -2))
-		echo '<li>';
-		echo $file;
-		echo ' - ';
-		echo substr($file, -2);
-		echo '</li>';
+		if (substr($file, -3) == '.md')
+		{
+			echo '<li>';
+			echo $file;
+			echo ' - ';
+			echo substr($file, -3);
+			echo '</li>';	
+		}
 	}
 	echo '</ul>';
 }
 
+echo '</div>';
 
 echo '</body>';
 echo '</html>';
