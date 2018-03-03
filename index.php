@@ -1,8 +1,8 @@
 <?php
 
 echo '<style>';
-include('css/normalize.css');
-include('css/skeleton.css');
+include('css/normalize.min.css');
+include('css/skeleton.min.css');
 echo '</style>';
 
 include('../parsedown/Parsedown.php');
