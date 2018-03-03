@@ -1,6 +1,6 @@
 <h2>BINGO</h2>
 29.09.2012 - 00:00<p>
-Finally! Ich weiﬂ noch nicht genau wie, aber es l‰uft endlich!<p> auto lo<br />
+Finally! Ich weiﬂ noch nicht genau wie, aber es l&auml;uft endlich!<p> auto lo<br />
 <br />
 iface lo inet loopback<br />
 iface eth0 inet dhcp<br />

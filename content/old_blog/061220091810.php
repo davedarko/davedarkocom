@@ -1,6 +1,6 @@
 <h2>Java Applet POSTet jetzt</h2>
 06.12.2009 - 18:10<p>
-Dem Gameboy Applet einen Schritt näher gerückt...
+Dem Gameboy Applet einen Schritt n&auml;her ger&uuml;ckt...
 
 <pre>
 import java.awt.TextArea;

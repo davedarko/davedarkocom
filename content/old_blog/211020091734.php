@@ -1,6 +1,6 @@
 <h2>Furbys</h2>
 21.10.2009 - 17:34<p>
-kleine Link Sammlung für das WG Haustier....<br />
+kleine Link Sammlung f&uuml;r das WG Haustier....<br />
 <br />
 http://hackfurby.com/index.html<br />
 <br />

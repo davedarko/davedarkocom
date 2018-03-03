@@ -1,6 +1,6 @@
-<h2>FTP Download Script für GBPrinterapp</h2>
+<h2>FTP Download Script f&uuml;r GBPrinterapp</h2>
 25.11.2009 - 12:41<p>
-Ein kleines App, welches vom FTP Server TXT Dateien vom Server runterlädt, löscht und im Home Verzeichnis speichert.<p>
+Ein kleines App, welches vom FTP Server TXT Dateien vom Server runterl&auml;dt, l&ouml;scht und im Home Verzeichnis speichert.<p>
 <h2>Feature</h2>
 osd notify Mitteilung.<p>
 <pre>
