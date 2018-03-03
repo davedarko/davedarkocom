@@ -43,7 +43,7 @@ if (is_array($content_folder))
 		) {
 			echo '<li>';
 			echo '<a href="index.php?page='.$file_name.'">';
-			echo $file_name;
+			echo make_that_filename_pretty($file_name);
 			echo '</a>';
 			echo '</li>';
 		}
@@ -83,4 +83,16 @@ echo '</div>';
 
 echo '</body>';
 echo '</html>';
+
+function make_that_filename_pretty($filename)
+{
+	$time = substr($filename, 0, 14);
+	$lang = substr($filename, 16, 2);
+	$name = substr($filename, 18);
+
+	print_r(array($time, $lang, $name));
+
+	$name_arr = explode('.', $name);
+	$name = $name_arr[0];
+}
 ?>
