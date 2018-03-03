@@ -7,7 +7,7 @@ Die Idee mit dem Bilder hochladen war eher eine fixe. Allerdings konnte ich so m
 </a><br />
 <br />
 Der erste Versuch. Hier war die Differenz nur auf Blaut&ouml;ne bezogen und ergab komische Relikte.<br />
-<img src="http://davedarko.com/gbapp_converter.php?file=./gameboyapp/old/20111231232221-SCOTT.dat&color=ffddbb"><br />
+<img src="http://davedarko.com/gameboy/gbapp_converter.php?file=./gameboyapp/old/20111231232221-SCOTT.dat&color=ffddbb"><br />
 <br />
 Nach ein wenig mehr Friemelei wurde es dann richtig berechnet.<br />
-<img src="http://davedarko.com/gbapp_converter.php?file=./gameboyapp/20120101031335-FINALDITHER.dat&color=ffddbb"><p>Tags: Gameboy, Gameboy Printer, Nintendo
+<img src="http://davedarko.com/gameboy/gbapp_converter.php?file=./gameboyapp/20120101031335-FINALDITHER.dat&color=ffddbb"><p>Tags: Gameboy, Gameboy Printer, Nintendo
