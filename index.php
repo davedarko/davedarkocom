@@ -109,9 +109,13 @@ function scan_and_list_folder($dir)
 	$output = '';
 	if (is_array($content_folder))
 	{
-		$output .= '<h3>';
-		$output .= make_that_filename_pretty($dir);
-		$output .= '</h3>';
+		$dir_name = trim(str_replace('content', '', $dir));
+		if (!empty($dir_name))
+		{
+			$output .= '<h3>';
+			$output .= make_that_filename_pretty($dir_name);
+			$output .= '</h3>';
+		}
 		$output .= '<ul>';
 		foreach ($content_folder as $file_name)
 		{
