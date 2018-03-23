@@ -1,4 +1,4 @@
-#The Lameboy
+##The Lameboy
 ![lameboy](/img/lameboy/lameboy_front.png "Lameboy front")
 
 What is this good for? 
