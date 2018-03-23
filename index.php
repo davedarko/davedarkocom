@@ -112,9 +112,9 @@ function scan_and_list_folder($dir)
 		$dir_name = trim(str_replace('content', '', $dir));
 		if (!empty($dir_name))
 		{
-			$output .= '<h3>';
+			$output .= '<h2>';
 			$output .= make_that_filename_pretty($dir_name);
-			$output .= '</h3>';
+			$output .= '</h2>';
 		}
 		$output .= '<ul>';
 		foreach ($content_folder as $file_name)
