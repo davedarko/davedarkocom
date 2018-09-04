@@ -3,7 +3,7 @@
 function toggle(id)
 {
 	var display_style = document.getElementById(id).style.display;
-	var visibility = display_style !== 'none';
+	var visibility = (display_style !== 'none');
 
 	if (visibility)
 	{
@@ -13,4 +13,6 @@ function toggle(id)
 	{
 		display_style = 'none';
 	}
+
+	console.log(id, display_style, visibility?1:0);
 }
