@@ -102,7 +102,10 @@ function make_that_filename_pretty($filename)
 	}
 	else
 	{
-		return str_replace('_', ' ', explode('.', $filename)[0]);
+		$name = $filename;
+		$name = str_replace('_', ' ', explode('.', $name)[0]);
+		$name = str_replace('/', '[+] ', $name);
+		return $name;
 	}
 }
 
