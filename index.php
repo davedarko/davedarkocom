@@ -103,7 +103,7 @@ function make_that_filename_pretty($filename)
 
 function scan_and_list_folder($dir)
 {
-	$content_folder = scandir($dir, 1);
+	$content_folder = scandir($dir);
 
 	$files_output = '';
 	$output = '';
