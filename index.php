@@ -106,7 +106,6 @@ function make_that_filename_pretty($filename)
 	}
 }
 
-document.getElementById(id).style.
 function scan_and_list_folder($dir, $folder_count = 0)
 {
 	$content_folder = scandir($dir, SCANDIR_SORT_DESCENDING);
@@ -131,7 +130,7 @@ function scan_and_list_folder($dir, $folder_count = 0)
 		$output .= '>';
 
 		$folder_count++;
-		
+
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
