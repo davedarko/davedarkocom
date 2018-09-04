@@ -2,7 +2,8 @@
 
 function toggle(id)
 {
-	var display_style = document.getElementById(id).style.display;
+	e = document.getElementById(id);
+	var display_style = e.style.display;
 	var visibility = (display_style !== 'none');
 
 	if (visibility)
