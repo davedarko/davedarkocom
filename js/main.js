@@ -2,7 +2,7 @@
 
 function toggle(id)
 {
-	var display_style = document.getElementById('folder_0').style.display;
+	var display_style = document.getElementById(id).style.display;
 	var visibility = display_style !== 'none';
 
 	if (visibility)

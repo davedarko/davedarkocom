@@ -129,8 +129,6 @@ function scan_and_list_folder($dir, $folder_count = 0)
 		}
 		$output .= '>';
 
-		$folder_count++;
-
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
@@ -138,8 +136,8 @@ function scan_and_list_folder($dir, $folder_count = 0)
 				is_dir($file_path) &&
 				$file_name != '.' &&
 				$file_name != '..'
-			) {				
-				$output .= scan_and_list_folder($file_path, $folder_count);
+			) {
+				$output .= scan_and_list_folder($file_path, $folder_count++);
 			}
 
 			if (
