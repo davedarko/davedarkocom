@@ -22,11 +22,8 @@ function toggle(id)
 	document.getElementById(id).style.display = display_style;
 }
 
-var menu_subs = document.getElementsByClassName('menu_sub');
-if (is_array(menu_subs))
+var list = document.getElementsByClassName("menu_sub");
+for (var i = 0; i < list.length; i++)
 {
-	menu_subs.forEach(function(element) {
-		element.style.display = 'none';
-		console.log(element, element.style.display);
-	});
+	list[i].style.display = 'none';
 }
