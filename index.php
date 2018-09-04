@@ -27,6 +27,11 @@ include('css/skeleton.min.css');
 include('css/font.min.css');
 include('css/custom.min.css');
 echo '</style>';
+
+echo '<script>';
+include('js/main.min.js');
+echo '</script>';
+
 echo '<title>';
 echo 'davedarko.com';
 echo '</title>';
@@ -101,7 +106,7 @@ function make_that_filename_pretty($filename)
 	}
 }
 
-
+document.getElementById(id).style.
 function scan_and_list_folder($dir, $folder_count = 0)
 {
 	$content_folder = scandir($dir, SCANDIR_SORT_DESCENDING);
@@ -113,7 +118,7 @@ function scan_and_list_folder($dir, $folder_count = 0)
 		$dir_name = trim(str_replace('content', '', $dir));
 		if (!empty($dir_name))
 		{
-			$output .= '<h2 onclick="$(\'#folder_'.$folder_count.'\').toggle();">';
+			$output .= '<h2 onclick="toggle(\'folder_'.$folder_count.'\');">';
 			$output .= make_that_filename_pretty($dir_name);
 			$output .= '</h2>';
 		}
@@ -124,6 +129,8 @@ function scan_and_list_folder($dir, $folder_count = 0)
 			$output .= 'style="display:none;"';
 		}
 		$output .= '>';
+
+		$folder_count++;
 		
 		foreach ($content_folder as $file_name)
 		{
@@ -133,7 +140,7 @@ function scan_and_list_folder($dir, $folder_count = 0)
 				$file_name != '.' &&
 				$file_name != '..'
 			) {				
-				$output .= scan_and_list_folder($file_path);
+				$output .= scan_and_list_folder($file_path, $folder_count);
 			}
 
 			if (
@@ -150,8 +157,6 @@ function scan_and_list_folder($dir, $folder_count = 0)
 		}
 		$output .= $files_output;
 		$output .= '</ul>';
-
-		$folder_count++;
 	}
 	return $output;
 }
@@ -194,5 +199,3 @@ function show_selected_page($dir, $page)
 		}
 	}
 }
-
-?>
