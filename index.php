@@ -101,7 +101,8 @@ function make_that_filename_pretty($filename)
 	}
 }
 
-function scan_and_list_folder($dir)
+
+function scan_and_list_folder($dir, $folder_count = 0)
 {
 	$content_folder = scandir($dir, SCANDIR_SORT_DESCENDING);
 
@@ -112,11 +113,12 @@ function scan_and_list_folder($dir)
 		$dir_name = trim(str_replace('content', '', $dir));
 		if (!empty($dir_name))
 		{
-			$output .= '<h2>';
+			$output .= '<h2 onclick="$(\'#folder_'.$folder_count.'\').toggle();">';
 			$output .= make_that_filename_pretty($dir_name);
 			$output .= '</h2>';
 		}
-		$output .= '<ul>';
+
+		$output .= '<ul id="folder_'.$folder_count.'" style="display:none;">';
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
@@ -142,6 +144,8 @@ function scan_and_list_folder($dir)
 		}
 		$output .= $files_output;
 		$output .= '</ul>';
+
+		$folder_count++;
 	}
 	return $output;
 }
