@@ -25,7 +25,8 @@ function toggle(id)
 var menu_subs = document.getElementsByClassName('menu_sub');
 if (is_array(menu_subs))
 {
-	menu_subs.forEach(function(element){
+	menu_subs.forEach(function(element) {
 		element.style.display = 'none';
+		console.log(element, element.style.display);
 	});
 }
