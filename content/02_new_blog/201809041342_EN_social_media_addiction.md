@@ -9,4 +9,7 @@ Now I turned to procrastinating, mainly cleaning up stuff and cook my lunch. Not
 
 Whenever I read something in a support group and decide it's nothing I can help with, I turn to check on every social media site again. Funny how time perception works, I was focused for 15 minutes and it felt like 1 1/2 hour. I found a bug and fixed it - time to do some more cleaning.
 
-Resume at the end of the day: pretty happy, noticeably more time on my hand, I even started a course on babble to learn Italian (after work of course!). Tomorrow I will get up early to do go to the gym. 
+Resume at the end of the day: pretty happy, noticeably more time on my hand, I even started a course on babble to learn Italian (after work of course!). Tomorrow I will get up early to do go to the gym.
+
+##### "last words"
+in the end I managed to work a bit on this site as well, not the best code but a step forward!
