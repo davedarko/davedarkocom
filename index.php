@@ -118,7 +118,13 @@ function scan_and_list_folder($dir, $folder_count = 0)
 			$output .= '</h2>';
 		}
 
-		$output .= '<ul id="folder_'.$folder_count.'" style="display:none;">';
+		$output .= '<ul id="folder_'.$folder_count.'"';
+		if (!empty($dir_name))
+		{
+			$output .= 'style="display:none;"';
+		}
+		$output .= '>';
+		
 		foreach ($content_folder as $file_name)
 		{
 			$file_path = $dir . '/' . $file_name;
