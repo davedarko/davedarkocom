@@ -103,12 +103,12 @@ function make_that_filename_pretty($filename)
 		$name_arr = explode('.', $name);
 		$name = str_replace('_', ' ', $name_arr[0]);
 
-		$time_year = substr($time,0,4);
-		$time_month = substr($time,3,2);
-		$time_day = substr($time,5,2);
+		$time_year = substr($time, 0, 4);
+		$time_month = substr($time, 4, 2);
+		$time_day = substr($time, 6, 2);
 
-		$time_hour = substr($time,7,2);
-		$time_minute = substr($time,9,2);
+		$time_hour = substr($time, 8, 2);
+		$time_minute = substr($time, 10, 2);
 
 		$time = '';
 		$time .= $time_year;
