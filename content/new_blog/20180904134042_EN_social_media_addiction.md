@@ -6,4 +6,6 @@ Ignoring social media is hard work. I have this automatism where I open the brow
 
 Now I turned to procrastinating, mainly cleaning up stuff and cook my lunch. Not necessarily a bad thing though, since this means I do stuff I would normally not consider doing. Having not payed immensely for food makes me happy, although it's not even a pizza. Trying to find my highs in accomplishing goals and chores today.
 
-Whenever I read something in a support group and decide it's nothing I can help with, I turn to check on every social media site again.
+Whenever I read something in a support group and decide it's nothing I can help with, I turn to check on every social media site again. Funny how time perception works, I was focused for 15 minutes and it felt like 1 1/2 hour. I found a bug and fixed it - time to do some more cleaning.
+
+Resume at the end of the day: pretty happy, noticeably more time on my hand, I even started a course on babble to learn Italian (after work of course!). Tomorrow I will get up early to do go to the gym. 
