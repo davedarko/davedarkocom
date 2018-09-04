@@ -89,6 +89,9 @@ echo '</script>';
 echo '</body>';
 echo '</html>';
 
+/**
+	that's a way too special function and only helpful for my shitty file naming 
+*/
 function make_that_filename_pretty($filename)
 {
 	$time = substr($filename, 0, 12);
@@ -99,6 +102,25 @@ function make_that_filename_pretty($filename)
 		$name = substr($filename, 16);
 		$name_arr = explode('.', $name);
 		$name = str_replace('_', ' ', $name_arr[0]);
+
+		$time_year = substr($time,0,4);
+		$time_month = substr($time,3,2);
+		$time_day = substr($time,5,2);
+
+		$time_hour = substr($time,7,2);
+		$time_minute = substr($time,9,2);
+
+		$time = '';
+		$time .= $time_year;
+		$time .= '-';
+		$time .= $time_month;
+		$time .= '-';
+		$time .= $time_day;
+		$time .= ' ';
+		$time .= $time_hour;
+		$time .= ':';
+		$time .= $time_minute;
+		
 		return $name . '<br>['.$lang.'] ' . $time;
 	}
 	else
