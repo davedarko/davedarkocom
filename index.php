@@ -28,10 +28,6 @@ include('css/font.min.css');
 include('css/custom.min.css');
 echo '</style>';
 
-echo '<script>';
-include('js/main.min.js');
-echo '</script>';
-
 echo '<title>';
 echo 'davedarko.com';
 echo '</title>';
@@ -85,6 +81,11 @@ echo '</div>';
 echo '</div>';
 
 echo '</div>';
+
+echo '<script>';
+include('js/main.min.js');
+echo '</script>';
+
 echo '</body>';
 echo '</html>';
 
