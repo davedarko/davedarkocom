@@ -128,7 +128,7 @@ function scan_and_list_folder($dir, $folder_count = 0)
 		$output .= '<ul id="folder_'.$folder_count.'"';
 		if (!empty($dir_name))
 		{
-			$output .= 'style="display:none;"';
+			$output .= 'class="menu_sub"';
 		}
 		$output .= '>';
 

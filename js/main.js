@@ -1,20 +1,35 @@
 // main.min.js
-
-function toggle(id)
+(function()
 {
-	e = document.getElementById(id);
-	display_style = e.style.display;
-	var visibility = (display_style !== 'none');
-
-	if (visibility)
+	function is_array($a)
 	{
-		display_style = 'none';
-
-	}
-	else
-	{
-		display_style = '';
+		return Array.isArray($a);
 	}
 
-	document.getElementById(id).style.display = display_style;
-}
+	function toggle(id)
+	{
+		e = document.getElementById(id);
+		display_style = e.style.display;
+		var visibility = (display_style !== 'none');
+
+		if (visibility)
+		{
+			display_style = 'none';
+		}
+		else
+		{
+			display_style = '';
+		}
+
+		document.getElementById(id).style.display = display_style;
+	}
+
+	var menu_subs = document.getElementsByClassName('menu_sub');
+	if (is_array(menu_subs))
+	{
+		menu_subs.forEach(function(element){
+			element.style.display = 'none';
+		});
+	}
+
+})();
