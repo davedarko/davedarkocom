@@ -48,33 +48,61 @@ if (isset($page))
 }
 else
 {
+	echo '<div>';
+	echo 'Best to follow me here, I will tweet about site updates.';
+	echo '<br>';
 	echo '<a href="https://twitter.com/davedarko">';
 	echo 'https://twitter.com/davedarko';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'I try to post a video at a weekly rate.';
+	echo '<br>';
 	echo '<a href="https://www.youtube.com/davedarko">';
 	echo 'https://www.youtube.com/davedarko';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'Previews and some nice shots of projects.';
+	echo '<br>';
 	echo '<a href="https://www.instagram.com/davedarkocom/">';
 	echo 'https://www.instagram.com/davedarkocom/';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'Where I share my projects - I want to use their api to import it to this page at one point.';
+	echo '<br>';
 	echo '<a href="https://www.hackaday.io/davedarko">';
 	echo 'https://www.hackaday.io/davedarko';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'Here I sell some kits, have a look - it helps out!';
+	echo '<br>';
 	echo '<a href="https://www.tindie.com/stores/davedarko/">';
 	echo 'https://www.tindie.com/stores/davedarko/';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'Where I should post more code!';
+	echo '<br>';
 	echo '<a href="https://github.com/davedarko/">';
 	echo 'https://github.com/davedarko/';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 
+	echo '<div>';
+	echo 'Some 3D designs I made, parts of projects etc.';
+	echo '<br>';
 	echo '<a href="https://www.thingiverse.com/davedarko/about">';
 	echo 'https://www.thingiverse.com/davedarko/about';
-	echo '</a><br>';
+	echo '</a>';
+	echo '</div>';
 	
 }
 echo '</div>';
