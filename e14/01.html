@@ -79,20 +79,50 @@
 <br>
 <br>The R2R ladder gets its name from the relationship of the values.
 <br>
-<br>It’s put together with Resistors of one value and twice of that. 
+<br>It’s put together with Resistors of one value -R- and one twice of that -2R-.
 <br>
-<br>The binary weighted DAC is put together by resistors in relation to two to the power of n times the first value. 
+<br>The binary weighted DAC is put together  by resistors in a binary relationship.
+<br>
+<br>Meaning values of R 2R 4R 8R 16R and so on.
+<br>
+<br>Because a binary weighted DAC was new to me, I wanted to know what to expect.
+<br>
+<br>So I made a spreadsheet that gives me the estimated values of the 10bit analog to digital converter of the AVR.
+<br>
+<br>These values range from 0 to 1024, and that's what my spreadsheet shows.
+<br>
+<br>[INSERT Calculations vid here]
+<br>
+<br>The smallest difference between all values was 27 units, which was enough to ensure we can write the code with manufacturing variances in mind.
+<br>
+<br>With all that theory in our way, we can finally start to solder something!
+
 <br>
 <br>
-<br>1:53 Script resistor values calculation spreadsheet
-<br>To get an idea of the resistor values I have to use, I made a spreadsheet that dynamically calculates everything for me. The center block calculates the value that a 10 bit ADC would show, if we connect it to the middle of the voltage divider and push a button.
+
+<br>Finally! I now can play some decent games on this little device.
 <br>
-<br>The upper block calculates the resistance when two buttons are being pushed, so we have two resistors in parallel. The result also feeds into the center block, so we get the ADC value for that as well.
+<br>Since this is a revision, there's not much left that I would want to change.
 <br>
-<br>The bottom block shows me how far apart the ADC values are from each other and highlights the smallest difference. You can see here why I decided on the 2k Ohm resistor for R6. The smallest gap is 27 units apart and that gives us some wiggle room for deviations in resistor values that influence the measured voltage.
+<br>Maybe the formfactor is a bit too square, but other than that, I'm very happy!
+<br>
+<br>If you want to make your own version, there are links below that guide you to the element14 comunity.
+<br>
+<br>There I will share my design files, the updated code and links to Daniels work.
 <br>
 <br>
-<br>So with that I was finally able to on with the soldering.p
+<br>That’s all we have for today. 
+<br>
+<br>Have you ever soldered something in freeform style, without the use of PCBs?
+<br>
+<br>What Games would you like to see on this handheld?
+<br>
+<br>Let us know on the Element14 community at
+<br>Element14.com/presents. We’ll see you next time.
+<br>
+<br>Auf Wiedersehen!
+<br>
+<br>
 <br>
 <br>[Soldering voice over]
 <br>
@@ -118,30 +148,7 @@
 <br>A bit later the I2C Display and the Attiny pins are ready to be joined.
 <br>
 <br>From here it is only the buzzer and battery holder that I will solder on off camera.
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>[coding]
-<br>	Tiny Bomber
-<br>	Tiny Space Invaders
-<br>	Tiny Gilbert
-<br>
-<br>[reveal]
-<br> - just show me playing 
-<br>
-<br>[outro]
-<br>
-<br>
-<br>“That’s all we have for today. Have you ever soldered something in freeform style?  
-<br>
-<br>Let us know on the Element14 community at
-<br>Element14.com/presents. We’ll see you next time.”
-<br>
-<br>
-<br>
+
 <br>Links
 <br>Daniel Champagne
 <br>sites.google.com/view/arduino-collection
