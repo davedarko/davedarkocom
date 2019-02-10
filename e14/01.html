@@ -26,22 +26,27 @@
 <br>only a proof of concept to show that it worked.
 <br>
 <br>For my first video for element14presents I wanted to 
-<br>show people how I made it
-<br>improve on the design and
-<br>play some games on the revised version
+<br> - show people how I made it
+<br> - improve on the design and
+<br> - finally play some games!
 <br>
+<br>So first, let's take a look at the chip.
 <br>
 <br>The Attiny85 has 8 pins, two are for supplying power.
-<br>A third pin is used as a reset.
+<br>A third pin is used as to reset the AVR.
 <br>
 <br>Two pins are used to connect the Display via I2C.
+<br>
+<br>That leaves us with only three pins for inputs and outputs!
 <br>
 <br>In my first design I used charlieplexing to read the buttons.
 <br>To find out more about Charlieplexing, checkout pcbheaven.com/wikipages/Charlieplexing/
 <br>
-<br>This used up 3 of 5 usable pins on the Attiny85.
+<br>This used up all of the usable pins on the Attiny85.
 <br>
 <br>This also means that there is no free pin for sound.
+<br>
+<br>But I want sound, so we want sound.
 <br>
 <br>While searching for ways to improve my design,
 <br>I found Daniel Champagne's Project.
