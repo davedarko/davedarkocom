@@ -1,0 +1,155 @@
+<body style="background: black; color: white;">
+<br>
+<br>[intro][shoot last]
+<br>
+<br>Hello and welcome back to element14 Presents.
+<br>
+<br>I’m Dave and in today’s episode we will be building a skeleton style handheld.
+<br>
+<br>We only need some leftover LED legs to do this.
+<br>
+<br>Well this and some more parts like an Attiny85 and an OLED display.
+<br>
+<br>Sounds good? Then let's get started! 
+<br>
+<br>[ jingle ]
+<br>
+<br>
+<br>[Project Overview]
+<br>Last year I've build this little handheld and people generally liked it.
+<br>
+<br>Sadly, I never wrote games for the handheld,
+<br>only a proof of concept to show that it worked.
+<br>
+<br>For my first video for element14presents I wanted to 
+<br>show people how I made it
+<br>improve on the design and
+<br>play some games on the revised version
+<br>
+<br>
+<br>The Attiny85 has 8 pins, two are for supplying power.
+<br>A third pin is used as a reset.
+<br>
+<br>Two pins are used to connect the Display via I2C.
+<br>
+<br>In my first design I used charlieplexing to read the buttons.
+<br>To find out more about Charlieplexing, checkout http://www.pcbheaven.com/wikipages/Charlieplexing/
+<br>
+<br>This used up 3 of 5 usable pins on the Attiny85.
+<br>
+<br>This also means that there is no free pin for sound.
+<br>
+<br>While searching for ways to improve my design,
+<br>I found Daniel Champagne's Project.
+<br>
+<br>He shares Games and Schematics for an Attiny85 based handheld,
+<br>with the same OLED Display I use.
+<br>
+<br>The design even has a buzzer!
+<br>
+<br>The Reset pin of the Attiny is used as an extra input though.
+<br>
+<br>Doing this means you can not reprogram the Attiny easily anymore.
+<br>
+<br>I want to be able to do that and need to leave the reset pin alone.
+<br>
+<br>There are two buttons on two ADC pins, plus a single button on another pin.
+<br>
+<br>To read more buttons I could use an R2R resistor ladder,
+<br>But that would mean using 8 more resistors
+<br>and We want to keep the parts count low.
+<br>
+<br>With the help of a binary weighted DAC I can have 4 buttons on one ADC pin,
+<br>using only 5 resistors.
+<br>
+<br>Since I don't need another free pin and to keep the code changes minimal,
+<br>I left the action button on the single pin.
+<br>
+<br>
+<br>Let’s compare the two analog to digital converters you can build with resistors.
+<br>
+<br>The R2R ladder gets its name from the relationship of the values.
+<br>
+<br>It’s put together with Resistors of one value and twice of that. 
+<br>
+<br>The binary weighted DAC is put together by resistors in relation to two to the power of n times the first value. 
+<br>
+<br>
+<br>1:53 Script resistor values calculation spreadsheet
+<br>To get an idea of the resistor values I have to use, I made a spreadsheet that dynamically calculates everything for me. The center block calculates the value that a 10 bit ADC would show, if we connect it to the middle of the voltage divider and push a button.
+<br>
+<br>The upper block calculates the resistance when two buttons are being pushed, so we have two resistors in parallel. The result also feeds into the center block, so we get the ADC value for that as well.
+<br>
+<br>The bottom block shows me how far apart the ADC values are from each other and highlights the smallest difference. You can see here why I decided on the 2k Ohm resistor for R6. The smallest gap is 27 units apart and that gives us some wiggle room for deviations in resistor values that influence the measured voltage.
+<br>
+<br>
+<br>So with that I was finally able to on with the soldering.p
+<br>
+<br>[Soldering voice over]
+<br>
+<br>With the help of EAGLE CAD I created a schematic to follow along.
+<br>
+<br>The printout is used as a guide while soldering all the parts together.
+<br>
+<br>I begin with bending the pins of the buttons straight,
+<br>then bend them and the IC socket pins by 90 degrees.
+<br>
+<br>The first parts I solder together are the buttons.
+<br>
+<br>With the D-Pad connected and poking solder noses removed - I'll continue with the resistors.
+<br>
+<br>The action button comes next, joined to the D-Pad.
+<br>
+<br>I add some solder to the IC socket and connect it to the d-pad via the pullup resistor for the reset pin.
+<br>
+<br>The ADC pin to read the binary weighted DAC is next.
+<br>
+<br>Some slight adjustments are necessary to connect it.
+<br>
+<br>A bit later the I2C Display and the Attiny pins are ready to be joined.
+<br>
+<br>From here it is only the buzzer and battery holder that I will solder on off camera.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>[coding]
+<br>	Tiny Bomber
+<br>	Tiny Space Invaders
+<br>	Tiny Gilbert
+<br>
+<br>[reveal]
+<br> - just show me playing 
+<br>
+<br>[outro]
+<br>
+<br>
+<br>“That’s all we have for today. Have you ever soldered something in freeform style?  
+<br>
+<br>Let us know on the Element14 community at
+<br>Element14.com/presents. We’ll see you next time.”
+<br>
+<br>
+<br>
+<br>Links
+<br>Daniel Champagne
+<br>https://sites.google.com/view/arduino-collection
+<br>https://hackaday.io/project/159741-tiny-joypad
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<style>
+body
+{
+	transform: scale(1, -1);
+	font-size: 12em;
+}
+</style>
