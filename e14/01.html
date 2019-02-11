@@ -155,6 +155,19 @@
 <br>hackaday.io/project/159741-tiny-joypad
 <br>
 
+
+When button one is pressed, resistor one and six behave as a voltage divider on the ADC pin.
+
+The formula to calculate the value of the ADC is down here.
+
+The maximum value of the 10bit ADC is divided here by the sum of R1 and R6 multiplied by R6.
+
+When we push two buttons, two parallel resitors technically become a new resistor with a new value.
+
+The formula to calculate the resistance of two parallel resistors is over here.
+
+Once calculated, we can put it in the formula from before.
+
 <style>
 body
 {
