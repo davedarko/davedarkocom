@@ -20,6 +20,9 @@ echo '<meta name="author" content="">';
 echo '<!-- Mobile Specific Metas -->';
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 
+echo '<!-- verified webpage for mastodon -->';
+echo '<link rel="me" href="https://chaos.social/@davedarko">';
+
 echo '<!-- CSS -->';
 echo '<style>';
 include('css/normalize.min.css');
