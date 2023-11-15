@@ -39,7 +39,7 @@ echo '</head>';
 echo '<body>';
 
 echo '<div class="container">';
-echo '<h1>davedarko</h1>';
+echo '<h1><a href="https://davedarko.com/index.php">davedarko</a></h1>';
 echo '<div class="row">';
 echo '<div class="four columns">';
 echo scan_and_list_folder($dir);
@@ -47,10 +47,14 @@ echo '</div>';
 echo '<div class="eight columns">';
 if (isset($page))
 {
-	show_selected_page($dir, $page);	
+	show_selected_page($dir, $page);
 }
 else
 {
+	echo '<div>';
+	echo '<img src="img/dave.jpeg">';
+	echo '</div>';
+
 	echo '<div>';
 	echo 'Best to follow me here, I will tweet about site updates.';
 	echo '<br>';
