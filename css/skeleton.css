@@ -260,11 +260,11 @@ p {
 }
 
 a {
-    color: #1eaedb
+    color: #ff0066;
 }
 
 a:hover {
-    color: #0fa0ce
+    color: #ff0066;
 }
 
 .button,
@@ -427,7 +427,7 @@ ul ul {
 }
 
 li {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 code {
@@ -437,20 +437,19 @@ code {
     white-space: nowrap;
     background: #131213;
     border: 1px solid #CCCCCC;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 pre>code {
     display: block;
     padding: 1rem 1.5rem;
-    white-space: pre
+    white-space: pre;
 }
-
 td,
 th {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #e1e1e1
+    border-bottom: 1px solid #e1e1e1;
 }
 
 td:first-child,

@@ -43,7 +43,7 @@ foreach ($tags as $tag) {
 
 The progress can be found here so far, but be warned - I'm still working on it.
 
-[blog.davedarko.com](blog.davedarko.com) \
-[blog.davedarko.com/projects.php](blog.davedarko.com/projects.php)
+[https://blog.davedarko.com](https://blog.davedarko.com/) \
+[https://blog.davedarko.com/projects.php](https://blog.davedarko.com/projects.php)
 
 
