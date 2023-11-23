@@ -43,6 +43,20 @@ foreach ($tags as $tag) {
 
 The progress can be found here so far, but be warned - I'm still working on it.
 
+Here are some stats I found interesting, the amount of logs and pages by year. 
+From 2018 on I've posted about as much as I did in 2017 alone.
+There was definitely a decline of incentives / interactions
+and I had gotten much more active on twitter at that point. 
+
+|year|2014|2015|2016|2017|2018|
+|---|---|---|---|---|---|
+|posts|134|134|102|152|72|
+
+|year|2019|2020|2021|2022|2023|
+|---|---|---|---|---|---|
+|posts|30|13|23|15|10|
+
+
 [https://blog.davedarko.com](https://blog.davedarko.com/) \
 [https://blog.davedarko.com/projects.php](https://blog.davedarko.com/projects.php)
 
