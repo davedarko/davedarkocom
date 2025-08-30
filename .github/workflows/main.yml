@@ -15,4 +15,5 @@ jobs:
         username: ${{ secrets.FTP_DD_USERNAME }}
         password: ${{ secrets.FTP_DD_PASSWORD }}
         protocol: ftps
+        port: 22
         server-dir: /davedarkocom/
