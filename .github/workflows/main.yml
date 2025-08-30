@@ -13,7 +13,7 @@ jobs:
       with:
         target-server: home538588053.1and1-data.host
         remote-user: ${{ secrets.FTP_DD_USERNAME }}
-        private-ssh-key: ${{ secrets.FTP_DD_PASSWORD }}
+        remote-key: ${{ secrets.FTP_DD_PASSWORD }}
         port: 22
         destination-path: ~/davedarkocom/
 
