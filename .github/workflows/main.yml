@@ -1,3 +1,31 @@
+on: [push]
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: Deploy Files
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy to Server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          username: ${{ secrets.FTP_DD_USERNAME }}
+          server: 'home538588053.1and1-data.host'
+          ssh_private_key: ${{ secrets.FTP_DD_PASSWORD }}
+          local_path: './*'
+          remote_path: '/davedarkocom'
+          sftpArgs: '-o ConnectTimeout=5'
+
+
+
+#         username: ${{ secrets.FTP_DD_USERNAME }}
+#         password: ${{ secrets.FTP_DD_PASSWORD }}
+#         protocol: ftp
+#         port: 22
+#         server-dir: /davedarkocom/
+
 # on: push
 # name: Publish Website
 # jobs:
@@ -17,22 +45,22 @@
 #         port: 22
 #         destination-path: ~/davedarkocom/
 
-on: push
-name: Deploy website on push
-jobs:
-  web-deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: Get latest code
-      uses: actions/checkout@v3
+# on: push
+# name: Deploy website on push
+# jobs:
+#   web-deploy:
+#     name: Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Get latest code
+#       uses: actions/checkout@v3
     
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-      with:
-        server: home538588053.1and1-data.host
-        username: ${{ secrets.FTP_DD_USERNAME }}
-        password: ${{ secrets.FTP_DD_PASSWORD }}
-        protocol: ftp
-        port: 22
-        server-dir: /davedarkocom/
+#     - name: Sync files
+#       uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+#       with:
+#         server: home538588053.1and1-data.host
+#         username: ${{ secrets.FTP_DD_USERNAME }}
+#         password: ${{ secrets.FTP_DD_PASSWORD }}
+#         protocol: ftp
+#         port: 22
+#         server-dir: /davedarkocom/
